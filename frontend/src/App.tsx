@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Dashboard from "./components/Dashboard";
+import Dashboard from "./components/pages/Dashboard";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
           path="/"
           element={
             <div className="justify-center items-center w-full">
+              <NavBar/>
               <Dashboard />
             </div>
           }
