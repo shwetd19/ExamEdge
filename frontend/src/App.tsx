@@ -13,7 +13,7 @@ function App() {
           path="/"
           element={
             <div className="justify-center items-center w-full">
-              <NavBar/>
+              <NavBar />
               <Dashboard />
             </div>
           }
@@ -22,8 +22,8 @@ function App() {
           path="/quizes"
           element={
             <div className="justify-center items-center w-full">
-              <NavBar/>
-              <Quizes/>
+              <NavBar />
+              <Quizes />
             </div>
           }
         />
@@ -31,8 +31,8 @@ function App() {
           path="/StudentQuiz"
           element={
             <div className="justify-center items-center w-full">
-              <NavBar/>
-              <StudentQuiz/>
+              <NavBar />
+              <StudentQuiz />
             </div>
           }
         />
