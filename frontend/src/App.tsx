@@ -1,8 +1,9 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Dashboard from "./components/pages/Dashboard";
+import Dashboard from "./components/pages/AdminDash";
 import NavBar from "./components/NavBar";
-import Quizes from "./components/pages/Quizes";
+import Quizes from "./components/pages/StudentDash";
+import StudentQuiz from "./components/pages/StudentQuiz";
 
 function App() {
   return (
@@ -23,6 +24,15 @@ function App() {
             <div className="justify-center items-center w-full">
               <NavBar/>
               <Quizes/>
+            </div>
+          }
+        />
+        <Route
+          path="/StudentQuiz"
+          element={
+            <div className="justify-center items-center w-full">
+              <NavBar/>
+              <StudentQuiz/>
             </div>
           }
         />
