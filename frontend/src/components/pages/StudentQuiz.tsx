@@ -1,14 +1,15 @@
+import Options from "../Options";
 import SideBar from "../SideBar";
 import Button from "@mui/material/Button";
 
 const StudentQuiz = () => {
   return (
-    <div className="w-full flex flex-col flex-1 overflow-y-hidden h-[92vh]">
+    <div className="w-full flex flex-col flex-1 overflow-y-hidden responsive-container">
       <div className="flex flex-row flex-1 overflow-y-auto">
         <SideBar />
         <div className="flex-1  overflow-y-auto">
           <div className="min-h-[8%] border-b border-t border-gray-300 flex px-4 py-4 justify-between">
-            <p className="mt-auto hidden sm:block">Question 1</p>
+            <p className="mt-auto hidden sm:block">Question i</p>
             <div className="flex items-center justify-center flex-col sm:flex-row mt-auto">
               <p className="sm:mr-4 mb-3 sm:mb-0 text-sm md:text-base">
                 {/* {response?.filter((resp) => resp.response !== "").length}/{" "} */}
@@ -35,6 +36,14 @@ const StudentQuiz = () => {
             >
               Submit
             </Button>
+          </div>
+          {/* <Question/> */}
+          <div>
+            <div className="text-left flex-1 flex-grow px-4 py-5 min-h-[86%] flex flex-col text-sm md:text-base">
+              <p className="break-words">question</p>
+              <Options />
+              {/* <div>options</div> */}
+            </div>
           </div>
         </div>
       </div>
